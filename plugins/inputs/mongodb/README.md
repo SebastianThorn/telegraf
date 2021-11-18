@@ -40,6 +40,13 @@ All MongoDB server versions from 2.6 and higher are supported.
   # insecure_skip_verify = false
 ```
 
+### Connecting to SRV-record
+If you need to connect to a SRV-record, add servers like this:
+```toml
+servers = ["mongodb+srv://mongodb.example.org/"]
+```
+
+
 ### Permissions
 
 If your MongoDB instance has access control enabled you will need to connect
